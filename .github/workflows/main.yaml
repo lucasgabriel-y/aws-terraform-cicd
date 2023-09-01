@@ -19,8 +19,8 @@ jobs:
           terraform_version: 0.15.0
 
       - name: Formata
-        run: terraform 
-        
+        run: terraform fmt
+
       - name: Init Terraform
         run: terraform init
 
