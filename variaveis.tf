@@ -7,7 +7,7 @@ variable "region" {
 
 variable "ami" {
   type        = string
-  description = "Imagem"
+  description = "Image"
   default     = "ami-053b0d53c279acc90"
 }
 
