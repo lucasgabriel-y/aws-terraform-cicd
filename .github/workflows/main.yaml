@@ -1,4 +1,4 @@
-name: Terraform init
+name: Terraform fmt
 
 on:
   push:
