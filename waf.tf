@@ -41,10 +41,6 @@ resource "aws_wafv2_web_acl" "tf_waf" {
     }
   }
 
-  tags = {
-    Tag1 = "Value1"
-    Tag2 = "Value2"
-  }
 
   visibility_config {
     cloudwatch_metrics_enabled = false
