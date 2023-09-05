@@ -22,9 +22,6 @@ jobs:
         id: fmt
         run: terraform fmt
 
-      - name: Init Terraform
-        id: init
-        run: terraform init
 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
