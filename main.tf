@@ -3,8 +3,7 @@ terraform {
   backend "s3" {
     bucket = "bucketerraform-lg"
     key    = "terraform\terraform.tfstate"
-    shared_credentials_file = "~/.aws/credentials"
-    profile = "[default]"
+    region = "us-east-2"
   }
 }
 
