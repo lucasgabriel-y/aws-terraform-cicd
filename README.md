@@ -1,11 +1,11 @@
 # Pipeline de CI/CD com Backend S3 para Terraform
 
 Este projeto utiliza um backend S3 para armazenar o arquivo de tfstate do Terraform. 
-O laboratório conta com 3 workflows que executam as atividades de formatação, validação, init, apply e destroy sendo esses 3 últimos executados com "workflow_dispatch".
 
 ## Visão Geral
 
-Neste projeto, implementamos um pipeline de Integração Contínua/Entrega Contínua (CI/CD) que automatiza a implantação de recursos de infraestrutura na AWS usando o Terraform. 
+Neste projeto, implementamos um pipeline de Integração Contínua/Entrega Contínua (CI/CD) que automatiza a implantação de recursos de infraestrutura na AWS usando o Terraform contendo 3 workflows que executam as atividades de formatação, validação, init, apply e destroy sendo esses 3 últimos executados com "workflow_dispatch".
+
 ## Caracteristicas
 
 - Implementação automatizada de recursos de infraestrutura com Terraform.
