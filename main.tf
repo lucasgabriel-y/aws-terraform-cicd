@@ -4,12 +4,14 @@ terraform {
     bucket = "bucketerraform-lg"
     key    = "terraform\terraform.tfstate"
     region = "us-east-2"
+    profile = "default"
   }
 }
 
 
 provider "aws" {
   region = var.region
+  profile = "default"
 }
 
 
