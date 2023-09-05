@@ -26,4 +26,3 @@ jobs:
           AWS_REGION: us-east-2
         run: |
           terraform init
-          terraform apply --auto-approve
