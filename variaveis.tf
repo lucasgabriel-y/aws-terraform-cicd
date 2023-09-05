@@ -20,7 +20,7 @@ variable "nome-ami" {
 
 variable "descricao-ami" {
   type        = string
-  description = "AMI criada a partir da EC2"
+  description = "AMI criada= a partir da EC2"
   default     = "AMI criada a partir da EC2"
 }
 

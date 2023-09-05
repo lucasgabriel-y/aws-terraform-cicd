@@ -1,6 +1,17 @@
+terraform {
+  
+  backend "s3" {
+    bucket = "bucketerraform-lg"
+    key    = "terraform\terraform.tfstate"
+    region = "us-east-2"
+  }
+}
+
+
 provider "aws" {
   region = var.region
 }
+
 
 #Cria o recurso para usar uma chave de acesso  
 resource "aws_key_pair" "key-pair" {
