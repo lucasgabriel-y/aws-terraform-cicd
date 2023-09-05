@@ -1,6 +1,6 @@
 # Cria o recurso para a declaração dos IPs
 resource "aws_wafv2_ip_set" "ip_set" {
-  name               = "conjunto-IPs"
+  name               = "conjunto-IP"
   description        = "Determina um conjunto de IPs"
   scope              = "REGIONAL"
   ip_address_version = "IPV4"
