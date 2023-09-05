@@ -20,13 +20,10 @@ jobs:
 
       - name: Init Terraform
         id: init
-        run: terraform init
-
-      - name: Apply Terraform
-        id: apply
-        run: terraform apply --auto-approve
-
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-2
+        run: |
+          terraform init
+          terraform apply --auto-approve
