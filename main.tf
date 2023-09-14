@@ -7,9 +7,9 @@ terraform {
   }
 }
 
-# Define o provedor AWS e suas credenciais
+# Define o provedor AWS 
 provider "aws" {
-  region = "us-east-1"  # Altere para a região desejada
+  region = "us-east-1" 
 }
 
 # Cria uma instância EC2
@@ -18,7 +18,7 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"              # Tipo de instância
 }
 
-# Exemplo de saída que exibirá o endereço IP público da instância criada
+# saída que exibirá o endereço IP público da instância criada
 output "public_ip" {
   value = aws_instance.example.public_ip
 }
