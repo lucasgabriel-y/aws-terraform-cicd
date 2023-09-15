@@ -2,14 +2,14 @@ terraform {
   
   backend "s3" {
     bucket = "bucketerraform-lg"
-    key    = "terraform\terraform.tfstate"
-    region = "us-east-1"
+    key    = "terraform.tfstate"
+    region = "us-east-2"
   }
 }
 
 # Define o provedor AWS 
 provider "aws" {
-  region = "us-east-1" 
+  region = "us-east-2" 
 }
 
 # Cria uma instância EC2
