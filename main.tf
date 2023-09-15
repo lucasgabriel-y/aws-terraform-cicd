@@ -14,7 +14,7 @@ provider "aws" {
 
 # Cria uma instância EC2
 resource "aws_instance" "example" {
-  ami           = "ami-051f7e7f6c2f40dc1" 
+  ami           = "ami-01103fb68b3569475" 
   instance_type = "t2.micro"              # Tipo de instância
 }
 
